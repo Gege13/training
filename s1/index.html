@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titlul din tab -->
+    <title>Training</title>
+
+    <!-- Cum afectam pe google results -->
+    <meta name="description" content="Eu apar in search results pe google" />
+    <meta name="url" content="https://www.enovatika.com" />
+    <meta name="keywords" content="training, zmed, branza" />
+
+    <!-- Open Graph pentru social media -->
+    <meta name="og:title" content="titlu ce apare la share pe social media" />
+    <meta
+      name="og:description"
+      content="description pe cardul din share pe social media"
+    />
+    <meta name="og:image" content="URL absolut catre o imagine" />
+    <!-- type: website, article OPTIONAL -->
+    <meta name="og:type" content="website" />
+    <meta name="og:url" content="URL absolut al paginii" />
+
+    <!-- favicon = imaginea din tabul de la browser, in stanga title -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="public/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="public/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="public/favicon-16x16.png"
+    />
+    <link rel="manifest" href="public/site.webmanifest" />
+
+    <!-- link = legatura cu un alt fisier -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- practic ii spun codului sa citeasca de aici si dupa sa continue -->
+    <script>
+      function changeInput() {
+        alert("A mers!");
+      }
+
+      function handleFocus(el) {
+        el.style.border = "10px solid blue";
+      }
+
+      function handleBlur(el) {
+        el.style.border = "1px solid grey";
+      }
+    </script>
+  </head>
+  <body>
+    <!-- <img src="images/pexels.jpg" alt="o poza cu o vaca" /> -->
+    <!-- H1 este cel mai important. Trebuie 1 / pagina, sus inainte de linia care nu mai incape pagina in ecran -->
+    <h1>Heading 1</h1>
+    <!-- h2 reprezinta titlul fiecarei sectiuni -->
+    <h2>Heading 2</h2>
+    <!-- h3 reprezinta o bucata dintr-o sectiune -->
+    <h3>Heading 3</h3>
+    <!-- h4 5 si 6 nu le folosim decat daca e mentionat in mod expres -->
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <!-- poate arata ca orice, pentru ca il stilizam cum vrem -->
+    <p>Paragraph Cu linie noua Span mare cu spatiu dupa ceva</p>
+    <p>Paragraph Cu linie noua <a href="#">Span</a> mare cu spatiu dupa ceva</p>
+    <p>Paragraph Cu linie noua Span mare cu spatiu dupa ceva</p>
+
+    <span>Span mare</span>
+
+    Sunt un text. Sunt un alt text.
+
+    <a href="form.html">Click me!</a>
+    <a href="https://www.google.com" target="_blank">Google</a>
+
+    <!-- de cautat si exersat toate input types;
+      input creaza casuta goala unde se poate pune text;
+      action e ce sa faca in momentul in care dau submit la formular, la action ii spun unde va face procesarea de date din formular;
+      method="GET" pentru cautare si apare in url, method="POST" pentru parole ca sa se piarda si sa nu apara in url; 
+      type="submit" creaza un buton de submit -->
+    <form action="form.html" method="POST"> 
+      <input type="email" name="user" required onchange="changeInput()" />
+      <input
+        type="password"
+        name="password"
+        required=""
+        onkeyup="changeInput()"
+      />
+      <input type="text" onkeydown="changeInput()" />
+      <input
+        type="text"
+        onfocus="handleFocus(this)"
+        onblur="handleBlur(this)"
+      />
+      <!-- <input type="date" /> nu folosim -->
+      <!-- placeholder e folosit sa apara un text gri in chenar si dupa dispare la tastare -->
+      <input type="text" placeholder="dd/mm/yyyy" disabled />
+      <label for="firstName">First name</label>
+      <input type="text" id="firstName" min="2" max="20" />
+      <label>
+        <img src="https://source.unsplash.com/60x24" alt="" />
+        <input type="radio" name="one" value="one" />
+      </label>
+      <label>
+        <img src="https://source.unsplash.com/60x24" alt="" />
+        <input type="radio" name="two" value="two" />
+      </label>
+      <label>
+        <img src="https://source.unsplash.com/60x24" alt="" />
+        <input type="radio" name="three" value="three" />
+      </label>
+      <input type="submit" />
+    </form>
+    <h1>new</h1>
+    <form action="">
+      <input type="range" min="0" max="10" step="5" />
+    </form>
+  </body>
+</html>

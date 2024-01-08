@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>SiteTailwind</title>
+
+     <!-- google results -->
+     <meta name="description" content="Eu apar in search results pe google" />
+     <meta name="url" content="https://www.enovatika.com" />
+     <meta name="keywords" content="training, zmed, branza" />
+ 
+     <!-- Open Graph social media -->
+     <meta name="og:title" content="titlu ce apare la share pe social media" />
+     <meta
+       name="og:description"
+       content="description pe cardul din share pe social media"
+     />
+     <meta name="og:image" content="URL absolut catre o imagine" />
+ 
+     <!-- FAVICON -->
+     <link rel="shortcut icon"
+      type="image/png"
+      sizes="32x32"
+      href="download.png" />
+
+</head>
+
+<!-- container-fluid -->
+<div class="flex px-4 flex-col bg-sky-950">
+  <!-- row -, flex-wrap e pus ca sa mi se mute pe un rand inferior daca se miscoreaza pagina-->
+  <div class="-mx-4 flex flex-wrap">
+    <!-- container , flex-col imi face ce vreau-->
+    <div class="flex w-full max-w-7xl px-4 mx-auto flex-col">
+      <!-- un row ce tine coloane , am pus py-2 sa am sus jos spatiu-->
+      <div class="-mx-4 flex py-2">
+        <!-- col pun justify-center ca sa pun pe mijlocul coloanei-->
+        <div class="flex px-4 w-4/12 text-red-400 justify-center">
+          <img src="https://source.unsplash.com/100x36" alt="" />
+        </div>
+        <!-- col -->
+        <div class="flex px-4 w-4/12 text-red-400 justify-center">
+          <ul class="flex justify-evenly list-none text ">
+            <li><a class="block px-2 py-1" href="#">Buton1</a></li>
+            <li><a class="block px-2 py-1" href="#">Buton2</a></li>
+            <li><a class="block px-2 py-1" href="#">Buton3</a></li>
+        </ul class="list-none">
+        </div>
+        <!-- col -->
+        <div class="flex px-4 w-4/12 text-red-400 justify-center">
+          <a class="text-3xl leading-7 font-medium decoration-rose-500 py-4 px-12 rounded-3xl bg-teal-400 hover:bg-sky-700 " href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex px-4 flex-col bg-orange-800">
+  <div class="-mx-4 flex flex-wrap">
+    <div class="flex w-full max-w-7xl px-4 mx-auto flex-col">
+      <!-- <div class="-mx-4 flex flex-wrap justify-center flex-col"> -->
+        <h1><strong>Al doilea strop de imaginatie</strong></h1>
+        <p>We impact startups & SMBs while crafting user experience.</p>
+      <!-- </div> -->
+    </div>
+  </div>
+</div>
+
+<div class="flex px-4 flex-col bg-violet-600">
+  <div class="-mx-4 flex flex-wrap">
+    <div class="flex w-full max-w-7xl px-4 mx-auto flex-col">
+      <div class="-mx-4 flex flex-wrap">
+        <div class="flex px-4 w-4/12 text-red-400 justify-center">
+          <div class="card">
+            <h3>Titlu card</h3>
+            <p>Paragraf card</p>
+            <img src="https://source.unsplash.com/1920x1920" alt="" />
+          </div>
+        </div>
+        <div class="flex px-4 w-4/12 text-red-400 justify-center">
+          <div class="card">
+            <h3>Titlu card</h3>
+            <p>Paragraf card</p>
+            <img src="https://source.unsplash.com/1920x1920" alt="" />
+          </div>
+        </div>
+        <div class="flex px-4 w-4/12 text-red-400 justify-center">
+          <div class="card">
+            <h3>Titlu card</h3>
+            <p>Paragraf card</p>
+            <img src="https://source.unsplash.com/1920x1920" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

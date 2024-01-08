@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Roboto:wght@400;500;700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* START RESET */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #031926;
+}
+
+html{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,ol {
+    list-style-type: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* END RESET */
+
+li, a, button{
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #fafafa ;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 5Rem;
+}
+
+.logo{
+    cursor: pointer;
+    width: 150px;
+
+}
+
+.navLink{
+    list-style: none;
+}
+
+.navLink li{
+    display: inline-block;
+    padding: 1rem ;
+}
+
+.navLink li a:hover{
+    color:#CF1259;
+}
+
+.button {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: #fafafa;
+    padding: 1rem 3rem 1rem;
+    border-radius: 1.8rem;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #CF1259;
+  }
+
+.button:hover{
+    backdrop-filter: #EFF0D1;
+}
+
+.container-fluid {
+    /* se foloseste dorect in body. Are toata latimea paginii */
+    padding: 0 1.6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    /* reprezinta un rand de continut. Se pune doar in container-fluid, container sau col */
+    margin: 0 -1.6rem;
+    display: flex;
+    /* in row nu se pune continut. Doar un container sau un col */
+}
+
+.container{
+    /* aseaza continutul pe aceeasi dimensiune si se ocupa de padding lateral */
+    width: 100%;
+    max-width: 120rem;
+    padding: 0 1.6rem;
+    margin: 0 auto;
+}
+
+.col{
+    /* aici pune continutul paginii */
+    flex: 1;
+    padding: 0 1.6rem;
+}
+
+.spatiu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 5rem;
+}
+
+/* START TYPOGRAPHIE  */
+
+h2{
+    /* ca sa fac font-size trebuie neaparat sa am line-height */
+    font-size: 2.2rem;
+    color: #00BFB3;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1{
+    font-size: 4.2rem;
+    line-height: 5rem;
+    color: #00BFB3;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 20rem;
+
+}
+
+p{
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    color: #6BAA75;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 5rem;
+
+}
+
+/* END TYPOGRAPHIE  */
+
+/* .section-1-background{
+    background-color: grey;
+    background-image: url("https://source.unsplash.com/1920x1080");
+} */
+
+
+.footer
+{
+    /* background-color: black; */
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+
+.social
+{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.social a 
+{
+    font-size: 2rem;
+    display: inline-block;
+    border: 1px solid beige;
+    color: whitesmoke;
+    width: 6rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.social a:hover
+{
+    background-color: antiquewhite;
+}
+
+.footer ul 
+{
+
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.footer ul li 
+{
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+.footer ul li a 
+{
+    text-decoration: none;
+    color: whitesmoke;
+    display: inline-block;
+    padding: 1rem 5rem;
+}
+
+.footer ul li a:hover
+{
+    color: skyblue;
+}
+
+
+.copy-right
+{
+    text-align: center;
+    padding-bottom: 3rem;
+    color: whitesmoke;
+}
+
+.submit {
+    /* font-family: "Poppins", sans-serif; */
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 500;
+    /* text-align: center; */
+    color: #fafafa;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    /* display: inline-block; */
+    cursor: pointer;
+    background-color: #CF1259;
+    /* ca sa scot o proprietate de css punt valoara unset */
+    border: unset;
+  }
+
+.submit:hover{
+    backdrop-filter: #EFF0D1;
+}
+
